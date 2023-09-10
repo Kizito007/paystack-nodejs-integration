@@ -10,10 +10,7 @@ const userSchema = new mongoose.Schema({
     paystack_ref: {
         type: String,
     },
-    donationCount: { // number of times user has made a donation
-        type: Number,
-    },
-    totalAmountDonated: {
+    amountDonated: {
         type: Number,
     },
     isSubscribed: {
