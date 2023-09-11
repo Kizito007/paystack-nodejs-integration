@@ -16,13 +16,12 @@ const userSchema = new mongoose.Schema({
     isSubscribed: {
         type: Boolean,
     },
+    planName: {
+        type: String,
+    },
     timeSubscribed: {
         type: Date,
     },
-    subscriptionEndDate: {
-        type: Date,
-    },
-    subscriptionDuration: { type: Number },
 });
 
 const User = mongoose.model("user", userSchema);
